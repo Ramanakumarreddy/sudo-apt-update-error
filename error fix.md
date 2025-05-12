@@ -11,6 +11,3 @@ To fix this issue, I added the missing GPG key manually:
 curl -fsSL https://archive.kali.org/archive-key.asc | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/kali-archive-keyring.gpg
 sudo apt update
 
-## second method :
-sudo wget https://archive.kali.org/archive-keyring.gpg -O /usr/share/keyrings/kali-archive-keyring.gpg
-sudo sha1sum /usr/share/keyrings/kali-archive-keyring.gpg
